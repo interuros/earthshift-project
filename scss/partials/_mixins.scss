@@ -1,0 +1,16 @@
+@mixin left-border-radius($top-left:10px, $bottom-left:10px){
+    border-top-left-radius: $top-left;
+    border-bottom-left-radius: $bottom-left;
+}
+
+@mixin right-border-radius($top-right:10px, $bottom-right:10px){
+    border-top-right-radius: $top-right;
+    border-bottom-right-radius: $bottom-right;
+}
+
+@mixin flex-box($display: flex, $justify-content: flex-start, $align-items: flex-start, $flex-direction: row){
+    display: $display;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    flex-direction: $flex-direction;
+}

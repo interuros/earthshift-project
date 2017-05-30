@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:700");
+body {
+  background-color: #f0f2f5;
+  font-size: 18px; }
+
+.title {
+  color: #7d7e87;
+  margin-bottom: 26px;
+  font-size: 16px; }
+
+.container {
+  background-color: white;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 0px 0px 40px -16px black; }
+
+/*----------------COLOR SCHEME-----------------*/
+.color-scheme {
+  font-family: 'Open Sans', 'Arial' ,sans-serif;
+  font-weight: 700; }
+  .color-scheme__list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row; }
+    .color-scheme__list__item {
+      margin: 34px 0 34px 68px; }
+      .color-scheme__list__item:first-child {
+        margin-left: 82px; }
+      .color-scheme__list__item:last-child {
+        margin-right: 81px; }
+      .color-scheme__list__item__colors {
+        width: 200px;
+        margin-bottom: 23px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row; }
+        .color-scheme__list__item__colors p {
+          width: 50%;
+          height: 100px;
+          font-size: 14px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: row; }
+          .color-scheme__list__item__colors p:first-child {
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px; }
+          .color-scheme__list__item__colors p:last-child {
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px; }
+        .color-scheme__list__item__colors--pink p:first-child {
+          background-color: #eb586f;
+          color: #e62a48; }
+        .color-scheme__list__item__colors--pink p:last-child {
+          background-color: #d14e63;
+          color: #bb3147; }
+        .color-scheme__list__item__colors--blue p:first-child {
+          background-color: #4aa0d5;
+          color: #2c87c0; }
+        .color-scheme__list__item__colors--blue p:last-child {
+          background-color: #428ebe;
+          color: #347299; }
+        .color-scheme__list__item__colors--sky p:first-child {
+          background-color: #d8e9f0;
+          color: #b3d4e2; }
+        .color-scheme__list__item__colors--sky p:last-child {
+          background-color: #c0cfd6;
+          color: #a1b7c2; }
+        .color-scheme__list__item__colors--coal p:first-child {
+          background-color: #454553;
+          color: #2e2e37; }
+        .color-scheme__list__item__colors--coal p:last-child {
+          background-color: #3d3d4a;
+          color: #26262e; }
+      .color-scheme__list__item__name {
+        color: #7d7e87;
+        font-size: 14px;
+        text-align: center; }

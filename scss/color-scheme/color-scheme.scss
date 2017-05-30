@@ -1,0 +1,87 @@
+/*----------------COLOR SCHEME-----------------*/
+.color-scheme{
+    font-family: 'Open Sans', 'Arial' ,sans-serif;
+    font-weight: 700;
+
+    &__list{
+        list-style: none;
+        @include flex-box($align-items:center, $justify-content:center);
+        &__item{
+
+            margin: 34px 0 34px 68px;
+            &:first-child{
+                margin-left: 82px;
+            }
+            &:last-child{
+                margin-right: 81px;
+            }
+
+
+
+            &__colors{
+                width: 200px;
+                margin-bottom: 23px;
+                @include flex-box($justify-content:space-around, $align-items:center);
+                & p{
+                    width: 50%;
+                    height: 100px;
+                    font-size: 14px;
+                    @include flex-box($align-items:center, $justify-content:center);
+
+                    &:first-child{
+                    @include left-border-radius;                
+                    }
+                    &:last-child{
+                    @include right-border-radius;
+                    }
+                }
+
+                &--pink{
+                    p:first-child{
+                        background-color: $pink-color-1;
+                        color: darken($pink-color-1, 10%);
+                    }
+                    p:last-child{
+                        background-color: $pink-color-2;
+                        color: darken($pink-color-2, 10%);
+                    }
+                }
+                &--blue{
+                    p:first-child{
+                        background-color: $blue-color-1;
+                        color: darken($blue-color-1, 10%);
+                    }
+                    p:last-child{
+                        background-color: $blue-color-2;
+                        color: darken($blue-color-2, 10%);
+                    }
+                }
+                &--sky{
+                    p:first-child{
+                        background-color: $sky-color-1;
+                        color: darken($sky-color-1, 10%);
+                    }
+                    p:last-child{
+                        background-color: $sky-color-2;
+                        color: darken($sky-color-2, 10%);
+                    }
+                }
+                &--coal{
+                    p:first-child{
+                        background-color: $coal-color-1;
+                        color: darken($coal-color-1, 10%);
+                    }
+                    p:last-child{
+                        background-color: $coal-color-2;
+                        color: darken($coal-color-2, 10%);
+                    }
+                }
+            }
+            &__name{
+                color: $title-color;
+                font-size: 14px;
+                text-align: center;
+            }
+        }
+    }
+}
