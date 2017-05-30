@@ -26,6 +26,7 @@
                     width: 50%;
                     height: 100px;
                     font-size: 14px;
+                    color: $colors-p-color;
                     @include flex-box($align-items:center, $justify-content:center);
 
                     &:first-child{
@@ -39,41 +40,33 @@
                 &--pink{
                     p:first-child{
                         background-color: $pink-color-1;
-                        color: darken($pink-color-1, 10%);
                     }
                     p:last-child{
                         background-color: $pink-color-2;
-                        color: darken($pink-color-2, 10%);
                     }
                 }
                 &--blue{
                     p:first-child{
                         background-color: $blue-color-1;
-                        color: darken($blue-color-1, 10%);
                     }
                     p:last-child{
                         background-color: $blue-color-2;
-                        color: darken($blue-color-2, 10%);
                     }
                 }
                 &--sky{
                     p:first-child{
                         background-color: $sky-color-1;
-                        color: darken($sky-color-1, 10%);
                     }
                     p:last-child{
                         background-color: $sky-color-2;
-                        color: darken($sky-color-2, 10%);
                     }
                 }
                 &--coal{
                     p:first-child{
                         background-color: $coal-color-1;
-                        color: darken($coal-color-1, 10%);
                     }
                     p:last-child{
                         background-color: $coal-color-2;
-                        color: darken($coal-color-2, 10%);
                     }
                 }
             }
