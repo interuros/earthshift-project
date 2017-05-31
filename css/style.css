@@ -16,7 +16,9 @@ body {
   border-bottom-right-radius: 10px;
   box-shadow: 0px 0px 40px -16px black; }
 
+/*---------------------------------------------------------*/
 /*----------------COLOR SCHEME-----------------*/
+/*---------------------------------------------------------*/
 .color-scheme {
   font-family: 'Open Sans', 'Arial' ,sans-serif;
   font-weight: 700; }
