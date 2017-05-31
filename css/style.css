@@ -1,7 +1,8 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:700");
+@import url("https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i|Montserrat:400,700|Open+Sans:300,400,400i,600,700");
 body {
   background-color: #f0f2f5;
-  font-size: 18px; }
+  font-size: 20px;
+  font-family: 'Open Sans', 'Arial', sans-serif; }
 
 .title {
   color: #7d7e87;
@@ -20,7 +21,6 @@ body {
 /*----------------COLOR SCHEME-----------------*/
 /*---------------------------------------------------------*/
 .color-scheme {
-  font-family: 'Open Sans', 'Arial' ,sans-serif;
   font-weight: 700; }
   .color-scheme__list {
     list-style: none;
@@ -76,3 +76,63 @@ body {
         color: #7d7e87;
         font-size: 14px;
         text-align: center; }
+
+/*---------------------------------------------------------*/
+/*----------------TYPOGRAPHY-----------------*/
+/*---------------------------------------------------------*/
+.typography__examples__example {
+  margin-left: 83px;
+  color: #3d3d4a; }
+  .typography__examples__example p:first-child {
+    color: #7d7e87;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Open Sans';
+    font-style: normal;
+    padding-top: 40px; }
+  .typography__examples__example:last-child {
+    padding-bottom: 70px; }
+  .typography__examples__example--montserrat {
+    font-family: 'Montserrat'; }
+    .typography__examples__example--montserrat--regular {
+      font-size: 56px;
+      font-weight: 400; }
+    .typography__examples__example--montserrat--bold {
+      font-weight: 700; }
+      .typography__examples__example--montserrat--bold--48px {
+        font-size: 48px; }
+      .typography__examples__example--montserrat--bold--32px {
+        font-size: 32px; }
+      .typography__examples__example--montserrat--bold--24px {
+        font-size: 24px; }
+  .typography__examples__example--libre-baskerville {
+    font-family: 'Libre Baskerville'; }
+    .typography__examples__example--libre-baskerville--italic {
+      font-size: 20px;
+      font-weight: 400;
+      font-style: italic; }
+    .typography__examples__example--libre-baskerville--regular {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: row; }
+      .typography__examples__example--libre-baskerville--regular--20px {
+        font-size: 20px;
+        margin-right: 115px; }
+      .typography__examples__example--libre-baskerville--regular--16px {
+        font-size: 16px; }
+  .typography__examples__example--open-sans--15px {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row; }
+    .typography__examples__example--open-sans--15px--regular {
+      font-weight: 400;
+      font-size: 15px;
+      margin-right: 260px; }
+    .typography__examples__example--open-sans--15px--italic {
+      font-size: 15px;
+      font-style: italic; }
+  .typography__examples__example--open-sans--bold {
+    font-weight: 700;
+    font-size: 14px; }

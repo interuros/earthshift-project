@@ -1,7 +1,9 @@
 @import "abstracts/mixins.scss";
 @import "abstracts/variables.scss";
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:700');
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i|Montserrat:400,700|Open+Sans:300,400,400i,600,700');
+
 
 @import "components/body.scss";
 @import "components/common.scss";
 @import "components/color-scheme.scss";
+@import "components/typography.scss";

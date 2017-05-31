@@ -1,0 +1,92 @@
+/*---------------------------------------------------------*/
+/*----------------TYPOGRAPHY-----------------*/
+/*---------------------------------------------------------*/
+.typography{
+
+
+    &__examples{
+
+
+        &__example{
+            margin-left: 83px;
+            color: $coal-color-2;
+            & p:first-child{
+                color: $title-color;
+                font-size: 16px;
+                font-weight: 600;
+                font-family: 'Open Sans';
+                font-style: normal;
+                padding-top: 40px;
+            }
+
+
+            &:last-child{
+                padding-bottom: 70px;
+            }
+                &--montserrat{
+                    font-family: 'Montserrat';
+
+                    &--regular{
+                            font-size: 56px;
+                            font-weight: 400;
+                    }
+                    &--bold{
+                            font-weight: 700;
+
+                        &--48px{
+                            font-size: 48px;
+                        }
+                        &--32px{
+                            font-size: 32px;
+                        }
+                        &--24px{
+                            font-size: 24px;
+                        }
+                    }
+                }
+
+                &--libre-baskerville{
+                    font-family: 'Libre Baskerville';
+                    &--italic{
+                        font-size: 20px;
+                        font-weight: 400;
+                        font-style: italic;
+                    }
+                    &--regular{
+                        @include flex-box($align-items: center);
+
+                        &--20px{
+                            font-size: 20px;
+                            margin-right: 115px;
+                        }
+                        &--16px{
+                            font-size: 16px;
+                        }
+                    }
+                }
+
+                &--open-sans{
+                    
+                 &--15px{
+                    @include flex-box($align-items: center);
+
+                    &--regular{
+                        font-weight: 400;
+                        font-size: 15px;
+                        margin-right: 260px;
+                    }
+                    &--italic{
+                        font-size: 15px;   
+                        font-style: italic;
+                    }
+                 }
+                &--bold{
+                    font-weight: 700;
+                    font-size: 14px;
+                }
+                }
+
+
+        }
+    }
+}
