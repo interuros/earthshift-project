@@ -11,7 +11,7 @@
     }
     p:first-child{ margin-top: 45px; }
 
-    &__examples-normal{
+    &__examples{
         @include flex-box($align-items: center);
 
         &__button{
@@ -28,20 +28,19 @@
                 font-weight: 700;
                 color: white;
                 margin-bottom: 40px;
+                outline: none;
                 @include button-dimension;
-                @include left-border-radius(7px, 7px);
-                @include right-border-radius(7px, 7px);
 
-                &.buttons__examples-normal__button--blue-lighter--regular{
+                &.buttons__examples__button--blue-lighter--regular{
                 color: $blue-color-1;
                 }
-                &.buttons__examples-normal__button--blue-lighter--disabled{
+                &.buttons__examples__button--blue-lighter--disabled{
                 color: rgb(110,172,210);
                 }
-                &.buttons__examples-normal__button--pink-lighter--regular{
+                &.buttons__examples__button--pink-lighter--regular{
                     color: $pink-color-1;
                 }
-                &.buttons__examples-normal__button--pink-lighter--disabled{
+                &.buttons__examples__button--pink-lighter--disabled{
                     color: rgb(236,96,118);
                 }
             }
@@ -97,90 +96,12 @@
         }
     }
 
-    &__examples-rounded{
-        @include flex-box($align-items: center);
-
-        &__button{
-            margin-right: 65px;
-            &:first-child{
-                margin-left: 28px;
-            }
-            &:last-child{
-                margin-right: 28px;
-            }
-            
-            button{
-                font-size: 14px;
-                font-weight: 700;
-                color: white;
-                margin-bottom: 40px;
-                @include button-dimension;
-                @include left-border-radius(50px, 50px);
-                @include right-border-radius(50px, 50px);
-
-                &.buttons__examples-rounded__button--blue-lighter--regular{
-                color: $blue-color-1;
-                }
-                &.buttons__examples-rounded__button--blue-lighter--disabled{
-                color: rgb(110,172,210);
-                }
-                &.buttons__examples-rounded__button--pink-lighter--regular{
-                    color: $pink-color-1;
-                }
-                &.buttons__examples-rounded__button--pink-lighter--disabled{
-                    color: rgb(236,96,118);
-                }
-            }
-
-            &--blue{
-
-                &--regular{
-                    @include button-style($blue-color-1, 0px solid $blue-color-1, 0px solid $blue-color-1, 3px solid darken($blue-color-1, 10%), 0px solid $blue-color-1);
-                }
-                &--howered{
-                    @include button-style($blue-howered-button-color, 0px solid $blue-howered-button-color, 0px solid $blue-howered-button-color, 3px solid darken($blue-howered-button-color, 10%), 0px solid $blue-howered-button-color);
-                }
-                &--disabled{
-                    @include button-style($blue-disabled-button-color, 0px solid $blue-disabled-button-color, 0px solid $blue-disabled-button-color, 0px solid $blue-disabled-button-color, 0px solid $blue-disabled-button-color);
-                }
-            }
-            &--pink{
-
-                &--regular{
-                    @include button-style($pink-color-1, 0px solid $pink-color-1, 0px solid $pink-color-1, 3px solid darken($pink-color-1, 10%), 0px solid $pink-color-1);
-                }
-                &--howered{
-                    @include button-style($pink-howered-button-color, 0px solid $pink-howered-button-color, 0px solid $pink-howered-button-color, 3px solid darken($pink-howered-button-color, 10%), 0px solid $pink-howered-button-color);
-                }
-                &--disabled{
-                    @include button-style($pink-disabled-button-color, 0px solid $pink-disabled-button-color, 0px solid $pink-disabled-button-color, 0px solid $pink-disabled-button-color, 0px solid $pink-disabled-button-color);
-                } 
-            }
-            &--blue-lighter{
-
-                &--regular{
-                    @include button-style(white, 3px solid $blue-color-1, 3px solid $blue-color-1, 3px solid $blue-color-1, 3px solid $blue-color-1); 
-                }
-                &--howered{
-                    @include button-style($blue-color-1, 0px solid $blue-color-1, 0px solid $blue-color-1, 0px solid $blue-color-1, 0px solid $blue-color-1);
-                }
-                &--disabled{
-                    @include button-style($bluelighter-disabled-button-color, 0px solid $bluelighter-disabled-button-color, 0px solid $bluelighter-disabled-button-color, 0px solid $bluelighter-disabled-button-color, 0px solid $bluelighter-disabled-button-color);
-                }
-            }
-            &--pink-lighter{
-
-                &--regular{
-                    @include button-style(white, 3px solid $pink-color-1, 3px solid $pink-color-1, 3px solid $pink-color-1, 3px solid $pink-color-1); 
-                }
-                &--howered{
-                    @include button-style($pink-color-1, 0px solid $pink-color-1, 0px solid $pink-color-1, 0px solid $pink-color-1, 0px solid $pink-color-1);
-                }
-                &--disabled{
-                    @include button-style($pinklighter-disabled-button-color, 0px solid $pinklighter-disabled-button-color, 0px solid $pinklighter-disabled-button-color, 0px solid $pinklighter-disabled-button-color, 0px solid $pinklighter-disabled-button-color);
-                }
-            }
-        }
+    .normal button{
+        @include left-border-radius(7px, 7px);
+        @include right-border-radius(7px, 7px);
     }
-
+    .rounded button{
+        @include left-border-radius(50px, 50px);
+        @include right-border-radius(50px, 50px);
+    }
 }
