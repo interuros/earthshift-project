@@ -1,0 +1,43 @@
+.action-notification{
+    &__list{
+     list-style: none;
+     @include flex-box($flex-direction: column, $align-items: center, $justify-content:flex-start);
+     &__item{
+         width: 1115px;
+         height: 50px;
+         margin-top: 35px;
+
+         @include right-border-radius(5px, 5px);
+         @include left-border-radius(5px, 5px);
+         @include flex-box($justify-content:space-between, $align-items: center);
+
+         &:first-child{
+             margin-top: 40px;
+         }
+         &:last-child{
+             margin-bottom: 40px;
+         }
+         p{
+             color: white;
+             font-size: 14px;
+             margin-left: 55px; 
+             font-weight: 700;
+         }
+         i{
+             margin-right: 25px;
+             color: $transparent-color;
+             font-size: 30px;
+         }
+         &--red{
+            background-color: rgb(235,65,65);
+         }
+         &--yellow{
+            background-color: rgb(246,182,30);
+         }
+         &--green{
+            background-color: rgb(108,202,51);
+         }
+     }
+
+    }
+}

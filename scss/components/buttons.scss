@@ -8,6 +8,7 @@
     font-size: 14px;
     margin-left: 13px;
     margin-bottom: 10px;
+    font-weight: 600;
     }
     p:first-child{ margin-top: 45px; }
 
@@ -30,6 +31,11 @@
                 margin-bottom: 40px;
                 outline: none;
                 @include button-dimension;
+
+                p{
+                    color: white;
+                    margin: 0;
+                }
 
                 &.buttons__examples__button--blue-lighter--regular{
                 color: $blue-color-1;
@@ -58,6 +64,11 @@
                 }
             }
             &--pink{
+                & i{
+                     margin-right: 25px;
+                     margin-left: 30px;
+                     font-size: 22px;
+                 }
 
                 &--regular{
                     @include button-style($pink-color-1, 0px solid $pink-color-1, 0px solid $pink-color-1, 3px solid darken($pink-color-1, 10%), 0px solid $pink-color-1);
@@ -96,12 +107,23 @@
         }
     }
 
-    .normal button{
+    .normal {
+        button{
         @include left-border-radius(7px, 7px);
         @include right-border-radius(7px, 7px);
+        }
+        .buttons__examples__button--pink button{
+                 @include flex-box($align-items:center);
+        }
     }
-    .rounded button{
+    .rounded {
+        button{
         @include left-border-radius(50px, 50px);
         @include right-border-radius(50px, 50px);
+        }
+        .buttons__examples__button--pink button{
+                 @include flex-box($flex-direction: row-reverse,$align-items:center)
+        }
     }
+    
 }
