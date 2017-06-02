@@ -116,7 +116,7 @@ body {
     .typography__examples__libre-baskerville--regular {
       display: flex;
       justify-content: flex-start;
-      align-items: center;
+      align-items: flex-end;
       flex-direction: row; }
       .typography__examples__libre-baskerville--regular--20px {
         font-size: 20px;
@@ -128,7 +128,7 @@ body {
     .typography__examples__open-sans--15px {
       display: flex;
       justify-content: flex-start;
-      align-items: center;
+      align-items: flex-end;
       flex-direction: row; }
       .typography__examples__open-sans--15px--regular {
         font-weight: 400;

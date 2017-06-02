@@ -46,7 +46,7 @@
                         font-style: italic;
                     }
                     &--regular{
-                        @include flex-box($align-items: center);
+                        @include flex-box($align-items: flex-end);
 
                         &--20px{
                             font-size: 20px;
@@ -61,7 +61,7 @@
                 &__open-sans{
                     margin-left: 83px;
                  &--15px{
-                    @include flex-box($align-items: center);
+                    @include flex-box($align-items: flex-end);
 
                     &--regular{
                         font-weight: 400;
