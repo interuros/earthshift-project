@@ -14,3 +14,16 @@
     align-items: $align-items;
     flex-direction: $flex-direction;
 }
+
+@mixin button-dimension($width: 230px, $height: 50px){
+    width: $width;
+    height: $height;
+}
+
+@mixin button-style($background-color, $border-top, $border-right, $border-bottom, $border-left){
+      background-color: $background-color;
+      border-top: $border-top;
+      border-right: $border-right;
+      border-bottom: $border-bottom;
+      border-left: $border-left;
+}

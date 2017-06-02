@@ -2,7 +2,8 @@
 body {
   background-color: #f0f2f5;
   font-size: 20px;
-  font-family: 'Open Sans', 'Arial', sans-serif; }
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-weight: 400; }
 
 .title {
   color: #7d7e87;
@@ -81,59 +82,279 @@ body {
 /*---------------------------------------------------------*/
 /*----------------TYPOGRAPHY-----------------*/
 /*---------------------------------------------------------*/
-.typography__examples__example {
-  margin-left: 83px;
-  color: #3d3d4a; }
-  .typography__examples__example p:first-child {
+.typography__examples {
+  color: #3d3d4a;
+  padding-bottom: 70px; }
+  .typography__examples p:first-child {
     color: #7d7e87;
     font-size: 16px;
     font-weight: 600;
     font-family: 'Open Sans';
     font-style: normal;
     padding-top: 40px; }
-  .typography__examples__example:last-child {
-    padding-bottom: 70px; }
-  .typography__examples__example--montserrat {
-    font-family: 'Montserrat'; }
-    .typography__examples__example--montserrat--regular {
+  .typography__examples__montserrat {
+    font-family: 'Montserrat';
+    margin-left: 83px; }
+    .typography__examples__montserrat--regular {
       font-size: 56px;
       font-weight: 400; }
-    .typography__examples__example--montserrat--bold {
+    .typography__examples__montserrat--bold {
       font-weight: 700; }
-      .typography__examples__example--montserrat--bold--48px {
+      .typography__examples__montserrat--bold--48px {
         font-size: 48px; }
-      .typography__examples__example--montserrat--bold--32px {
+      .typography__examples__montserrat--bold--32px {
         font-size: 32px; }
-      .typography__examples__example--montserrat--bold--24px {
+      .typography__examples__montserrat--bold--24px {
         font-size: 24px; }
-  .typography__examples__example--libre-baskerville {
-    font-family: 'Libre Baskerville'; }
-    .typography__examples__example--libre-baskerville--italic {
+  .typography__examples__libre-baskerville {
+    font-family: 'Libre Baskerville';
+    margin-left: 83px; }
+    .typography__examples__libre-baskerville--italic {
       font-size: 20px;
       font-weight: 400;
       font-style: italic; }
-    .typography__examples__example--libre-baskerville--regular {
+    .typography__examples__libre-baskerville--regular {
       display: flex;
       justify-content: flex-start;
       align-items: center;
       flex-direction: row; }
-      .typography__examples__example--libre-baskerville--regular--20px {
+      .typography__examples__libre-baskerville--regular--20px {
         font-size: 20px;
         margin-right: 115px; }
-      .typography__examples__example--libre-baskerville--regular--16px {
+      .typography__examples__libre-baskerville--regular--16px {
         font-size: 16px; }
-  .typography__examples__example--open-sans--15px {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: row; }
-    .typography__examples__example--open-sans--15px--regular {
-      font-weight: 400;
-      font-size: 15px;
-      margin-right: 260px; }
-    .typography__examples__example--open-sans--15px--italic {
-      font-size: 15px;
-      font-style: italic; }
-  .typography__examples__example--open-sans--bold {
-    font-weight: 700;
-    font-size: 14px; }
+  .typography__examples__open-sans {
+    margin-left: 83px; }
+    .typography__examples__open-sans--15px {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: row; }
+      .typography__examples__open-sans--15px--regular {
+        font-weight: 400;
+        font-size: 15px;
+        margin-right: 260px; }
+      .typography__examples__open-sans--15px--italic {
+        font-size: 15px;
+        font-style: italic; }
+    .typography__examples__open-sans--bold {
+      font-weight: 700;
+      font-size: 14px; }
+
+/*---------------------------------------------------------*/
+/*----------------BUTTONS-----------------*/
+/*---------------------------------------------------------*/
+.buttons p {
+  color: #7d7e87;
+  font-size: 14px;
+  margin-left: 13px;
+  margin-bottom: 10px; }
+
+.buttons p:first-child {
+  margin-top: 45px; }
+
+.buttons__examples-normal {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row; }
+  .buttons__examples-normal__button {
+    margin-right: 65px; }
+    .buttons__examples-normal__button:first-child {
+      margin-left: 28px; }
+    .buttons__examples-normal__button:last-child {
+      margin-right: 28px; }
+    .buttons__examples-normal__button button {
+      font-size: 14px;
+      font-weight: 700;
+      color: white;
+      margin-bottom: 40px;
+      width: 230px;
+      height: 50px;
+      border-top-left-radius: 7px;
+      border-bottom-left-radius: 7px;
+      border-top-right-radius: 7px;
+      border-bottom-right-radius: 7px; }
+      .buttons__examples-normal__button button.buttons__examples-normal__button--blue-lighter--regular {
+        color: #4aa0d5; }
+      .buttons__examples-normal__button button.buttons__examples-normal__button--blue-lighter--disabled {
+        color: #6eacd2; }
+      .buttons__examples-normal__button button.buttons__examples-normal__button--pink-lighter--regular {
+        color: #eb586f; }
+      .buttons__examples-normal__button button.buttons__examples-normal__button--pink-lighter--disabled {
+        color: #ec6076; }
+    .buttons__examples-normal__button--blue--regular {
+      background-color: #4aa0d5;
+      border-top: 0px solid #4aa0d5;
+      border-right: 0px solid #4aa0d5;
+      border-bottom: 3px solid #2c87c0;
+      border-left: 0px solid #4aa0d5; }
+    .buttons__examples-normal__button--blue--howered {
+      background-color: #1695e3;
+      border-top: 0px solid #1695e3;
+      border-right: 0px solid #1695e3;
+      border-bottom: 3px solid #1176b5;
+      border-left: 0px solid #1695e3; }
+    .buttons__examples-normal__button--blue--disabled {
+      background-color: #89c1e4;
+      border-top: 0px solid #89c1e4;
+      border-right: 0px solid #89c1e4;
+      border-bottom: 0px solid #89c1e4;
+      border-left: 0px solid #89c1e4; }
+    .buttons__examples-normal__button--pink--regular {
+      background-color: #eb586f;
+      border-top: 0px solid #eb586f;
+      border-right: 0px solid #eb586f;
+      border-bottom: 3px solid #e62a48;
+      border-left: 0px solid #eb586f; }
+    .buttons__examples-normal__button--pink--howered {
+      background-color: #eb415b;
+      border-top: 0px solid #eb415b;
+      border-right: 0px solid #eb415b;
+      border-bottom: 3px solid #e11837;
+      border-left: 0px solid #eb415b; }
+    .buttons__examples-normal__button--pink--disabled {
+      background-color: #f292a1;
+      border-top: 0px solid #f292a1;
+      border-right: 0px solid #f292a1;
+      border-bottom: 0px solid #f292a1;
+      border-left: 0px solid #f292a1; }
+    .buttons__examples-normal__button--blue-lighter--regular {
+      background-color: white;
+      border-top: 3px solid #4aa0d5;
+      border-right: 3px solid #4aa0d5;
+      border-bottom: 3px solid #4aa0d5;
+      border-left: 3px solid #4aa0d5; }
+    .buttons__examples-normal__button--blue-lighter--howered {
+      background-color: #4aa0d5;
+      border-top: 0px solid #4aa0d5;
+      border-right: 0px solid #4aa0d5;
+      border-bottom: 0px solid #4aa0d5;
+      border-left: 0px solid #4aa0d5; }
+    .buttons__examples-normal__button--blue-lighter--disabled {
+      background-color: #c9e3f2;
+      border-top: 0px solid #c9e3f2;
+      border-right: 0px solid #c9e3f2;
+      border-bottom: 0px solid #c9e3f2;
+      border-left: 0px solid #c9e3f2; }
+    .buttons__examples-normal__button--pink-lighter--regular {
+      background-color: white;
+      border-top: 3px solid #eb586f;
+      border-right: 3px solid #eb586f;
+      border-bottom: 3px solid #eb586f;
+      border-left: 3px solid #eb586f; }
+    .buttons__examples-normal__button--pink-lighter--howered {
+      background-color: #eb586f;
+      border-top: 0px solid #eb586f;
+      border-right: 0px solid #eb586f;
+      border-bottom: 0px solid #eb586f;
+      border-left: 0px solid #eb586f; }
+    .buttons__examples-normal__button--pink-lighter--disabled {
+      background-color: #f9cdd4;
+      border-top: 0px solid #f9cdd4;
+      border-right: 0px solid #f9cdd4;
+      border-bottom: 0px solid #f9cdd4;
+      border-left: 0px solid #f9cdd4; }
+
+.buttons__examples-rounded {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row; }
+  .buttons__examples-rounded__button {
+    margin-right: 65px; }
+    .buttons__examples-rounded__button:first-child {
+      margin-left: 28px; }
+    .buttons__examples-rounded__button:last-child {
+      margin-right: 28px; }
+    .buttons__examples-rounded__button button {
+      font-size: 14px;
+      font-weight: 700;
+      color: white;
+      margin-bottom: 40px;
+      width: 230px;
+      height: 50px;
+      border-top-left-radius: 50px;
+      border-bottom-left-radius: 50px;
+      border-top-right-radius: 50px;
+      border-bottom-right-radius: 50px; }
+      .buttons__examples-rounded__button button.buttons__examples-rounded__button--blue-lighter--regular {
+        color: #4aa0d5; }
+      .buttons__examples-rounded__button button.buttons__examples-rounded__button--blue-lighter--disabled {
+        color: #6eacd2; }
+      .buttons__examples-rounded__button button.buttons__examples-rounded__button--pink-lighter--regular {
+        color: #eb586f; }
+      .buttons__examples-rounded__button button.buttons__examples-rounded__button--pink-lighter--disabled {
+        color: #ec6076; }
+    .buttons__examples-rounded__button--blue--regular {
+      background-color: #4aa0d5;
+      border-top: 0px solid #4aa0d5;
+      border-right: 0px solid #4aa0d5;
+      border-bottom: 3px solid #2c87c0;
+      border-left: 0px solid #4aa0d5; }
+    .buttons__examples-rounded__button--blue--howered {
+      background-color: #1695e3;
+      border-top: 0px solid #1695e3;
+      border-right: 0px solid #1695e3;
+      border-bottom: 3px solid #1176b5;
+      border-left: 0px solid #1695e3; }
+    .buttons__examples-rounded__button--blue--disabled {
+      background-color: #89c1e4;
+      border-top: 0px solid #89c1e4;
+      border-right: 0px solid #89c1e4;
+      border-bottom: 0px solid #89c1e4;
+      border-left: 0px solid #89c1e4; }
+    .buttons__examples-rounded__button--pink--regular {
+      background-color: #eb586f;
+      border-top: 0px solid #eb586f;
+      border-right: 0px solid #eb586f;
+      border-bottom: 3px solid #e62a48;
+      border-left: 0px solid #eb586f; }
+    .buttons__examples-rounded__button--pink--howered {
+      background-color: #eb415b;
+      border-top: 0px solid #eb415b;
+      border-right: 0px solid #eb415b;
+      border-bottom: 3px solid #e11837;
+      border-left: 0px solid #eb415b; }
+    .buttons__examples-rounded__button--pink--disabled {
+      background-color: #f292a1;
+      border-top: 0px solid #f292a1;
+      border-right: 0px solid #f292a1;
+      border-bottom: 0px solid #f292a1;
+      border-left: 0px solid #f292a1; }
+    .buttons__examples-rounded__button--blue-lighter--regular {
+      background-color: white;
+      border-top: 3px solid #4aa0d5;
+      border-right: 3px solid #4aa0d5;
+      border-bottom: 3px solid #4aa0d5;
+      border-left: 3px solid #4aa0d5; }
+    .buttons__examples-rounded__button--blue-lighter--howered {
+      background-color: #4aa0d5;
+      border-top: 0px solid #4aa0d5;
+      border-right: 0px solid #4aa0d5;
+      border-bottom: 0px solid #4aa0d5;
+      border-left: 0px solid #4aa0d5; }
+    .buttons__examples-rounded__button--blue-lighter--disabled {
+      background-color: #c9e3f2;
+      border-top: 0px solid #c9e3f2;
+      border-right: 0px solid #c9e3f2;
+      border-bottom: 0px solid #c9e3f2;
+      border-left: 0px solid #c9e3f2; }
+    .buttons__examples-rounded__button--pink-lighter--regular {
+      background-color: white;
+      border-top: 3px solid #eb586f;
+      border-right: 3px solid #eb586f;
+      border-bottom: 3px solid #eb586f;
+      border-left: 3px solid #eb586f; }
+    .buttons__examples-rounded__button--pink-lighter--howered {
+      background-color: #eb586f;
+      border-top: 0px solid #eb586f;
+      border-right: 0px solid #eb586f;
+      border-bottom: 0px solid #eb586f;
+      border-left: 0px solid #eb586f; }
+    .buttons__examples-rounded__button--pink-lighter--disabled {
+      background-color: #f9cdd4;
+      border-top: 0px solid #f9cdd4;
+      border-right: 0px solid #f9cdd4;
+      border-bottom: 0px solid #f9cdd4;
+      border-left: 0px solid #f9cdd4; }

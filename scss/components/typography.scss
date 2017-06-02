@@ -5,11 +5,8 @@
 
 
     &__examples{
-
-
-        &__example{
-            margin-left: 83px;
             color: $coal-color-2;
+            padding-bottom: 70px;
             & p:first-child{
                 color: $title-color;
                 font-size: 16px;
@@ -18,14 +15,9 @@
                 font-style: normal;
                 padding-top: 40px;
             }
-
-
-            &:last-child{
-                padding-bottom: 70px;
-            }
-                &--montserrat{
+                &__montserrat{
                     font-family: 'Montserrat';
-
+                    margin-left: 83px;
                     &--regular{
                             font-size: 56px;
                             font-weight: 400;
@@ -45,8 +37,9 @@
                     }
                 }
 
-                &--libre-baskerville{
+                &__libre-baskerville{
                     font-family: 'Libre Baskerville';
+                    margin-left: 83px;
                     &--italic{
                         font-size: 20px;
                         font-weight: 400;
@@ -65,8 +58,8 @@
                     }
                 }
 
-                &--open-sans{
-                    
+                &__open-sans{
+                    margin-left: 83px;
                  &--15px{
                     @include flex-box($align-items: center);
 
@@ -87,6 +80,6 @@
                 }
 
 
-        }
+        
     }
 }
