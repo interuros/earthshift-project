@@ -27,3 +27,9 @@
       border-bottom: $border-bottom;
       border-left: $border-left;
 }
+
+@mixin custom-radio-checkbox($background-color, $height, $width){
+                background-color:$background-color;
+                height: $height;
+                width:  $width;
+}

@@ -1,0 +1,66 @@
+/*---------------------------------------------------------*/
+/*----------------RADIO BUTTONS-----------------*/
+/*---------------------------------------------------------*/
+.radio-buttons{
+    &__list{
+        list-style: none;
+        @include flex-box($justify-content:flex-start, $align-items:center);    
+        flex-wrap: wrap;
+
+        &:after{
+            content: "";
+            height: 1px;
+            width: 1061px;
+            background-color: $sky-color-2;
+            margin: 0 auto;
+        }
+        &__example{
+            font-weight: 600;
+            color: $coal-color-1;
+            margin: 50px 0 48px 0;
+            &:first-child{
+                margin-left: 53px;
+                width: 304px;
+            }
+            &:nth-child(2){
+                width: 294px;
+            }
+            &:nth-child(3){
+                width: 280px;
+            }
+
+
+            input[type="radio"]{
+                display: none;
+            }
+            input[type="radio"] + label:before{
+                @include custom-radio-checkbox($sky-color-2, 18px, 18px);
+                @include right-border-radius(50%, 50%);
+                @include left-border-radius(50%, 50%);
+                content: "";
+                display: inline-block;
+                vertical-align: middle;
+                margin-right: 20px;
+                margin-top: -5px;
+                
+            }
+
+            &--off {
+
+            }
+            &--on input[type="radio"] + label:before{
+                @include custom-radio-checkbox($blue-color-1, 12px, 12px);
+                border: 3px solid $sky-color-2;
+            }
+            &--hovered input[type="radio"] + label:before{
+                @include custom-radio-checkbox($blue-color-1, 16px, 16px);
+                border: 1px solid $sky-color-2;
+            }
+            &--disabled{
+                color: $sky-color-2;
+            }
+
+        }
+
+    }
+}
