@@ -1,21 +1,67 @@
 // === COLORS ===
+
+// === general colors ===
+$body-bgcolor: #f0f2f5;
 $title-color: rgb(125, 126, 135);
-$pink-color-1: rgb(235, 88, 111);
-$pink-color-2: rgb(209, 78, 99);
-$blue-color-1: rgb(74, 160, 213);
-$blue-color-2: rgb(66, 142, 190);
-$sky-color-1: rgb(216, 233, 240);
-$sky-color-2: rgb(192, 207, 214);
-$coal-color-1: rgb(69, 69, 83);
-$coal-color-2: rgb(61, 61, 74);
+$pink-color-primary: rgb(235, 88, 111);
+$pink-color-secondary: rgb(209, 78, 99);
+$blue-color-primary: rgb(74, 160, 213);
+$blue-color-secondary: rgb(66, 142, 190);
+$sky-color-primary: rgb(216, 233, 240);
+$sky-color-secondary: rgb(192, 207, 214);
+$coal-color-primary: rgb(69, 69, 83);
+$coal-color-secondary: rgb(61, 61, 74);
 $transparent-color: rgba(0, 0 , 0, 0.4);
+$grey-common: rgb(233,233,233);
+
+// === button colors ===
 $blue-howered-button-color: rgb(22, 149, 227);
 $blue-disabled-button-color: rgb(137, 193, 228);
 $pink-howered-button-color: rgb(235, 65, 91);
 $pink-disabled-button-color: rgb(242, 146, 161);
 $bluelighter-disabled-button-color: rgb(201,227,242);
+$bluelighter-disabled-text-color: rgb(110,172,210);
 $pinklighter-disabled-button-color: rgb(249,205,212);
+$pinklighter-disabled-text-color: rgb(236,96,118);
+
+// === action notification colors ===
+$action-notification-red: rgb(235,65,65);
+$action-notification-yellow: rgb(246,182,30);
+$action-notification-green: rgb(108,202,51);
+
+// === sliders color ===
+$blue-slider-dark: rgb(57, 123, 165);
+$blue-slider-light: rgb(54, 157, 220);
+$pink-slider-dark: rgb(189, 81, 98);
+$pink-slider-light: rgb(253, 73, 101);
+
 
 // === FONTS ===
 
+// === font-weight ===
+$font-bold: 700;
+$font-regular: 400;
+$font-semibold: 600;
+
+// === font size ===
+$font-size-common: 14px;
+$font-size-smallest:10px;
+$font-size-very-small: 15px;
+$font-size-small: 16px;
+$font-size-medium: 20px;
+$font-size-medium-big: 24px;
+$font-size-big: 32px;
+$font-size-very-big: 48px;
+$font-size-biggest: 56px;
+$icon-font-size: 22px;
+$icon-font-size-big: 30px;
+
+// === font family ===
+$font-family-common: 'Open Sans';
+
+
+// === BOX-SHADOW ===
+
+$box-shadow-common: 0px 0px 40px -16px rgba(0,0,0,1);
+$box-shadow-thumb: 0px 0px 12px 0px rgba(221,221,221,1);
 

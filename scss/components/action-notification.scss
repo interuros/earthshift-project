@@ -23,21 +23,21 @@
          p{
              color: white;
              margin-left: 55px; 
-             font-weight: 700;
+             font-weight: $font-bold;
          }
          i{
              margin-right: 25px;
              color: $transparent-color;
-             font-size: 30px;
+             font-size: $icon-font-size-big;
          }
          &--red{
-            background-color: rgb(235,65,65);
+            background-color: $action-notification-red;
          }
          &--yellow{
-            background-color: rgb(246,182,30);
+            background-color: $action-notification-yellow;
          }
          &--green{
-            background-color: rgb(108,202,51);
+            background-color: $action-notification-green;
          }
      }
 

@@ -1,6 +1,6 @@
 body{
-    background-color: #f0f2f5;
-    font-size: 14px;
-    font-family: 'Open Sans', 'Arial', sans-serif;
-    font-weight: 400;
+    background-color: $body-bgcolor;
+    font-size: $font-size-common;
+    font-family: $font-family-common, 'Arial', sans-serif;
+    font-weight: $font-regular;
 }

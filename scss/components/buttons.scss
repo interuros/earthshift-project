@@ -5,9 +5,8 @@
     
     p{
     color: $title-color;
-    margin-left: 13px;
-    margin-bottom: 10px;
-    font-weight: 600;
+    font-weight: $font-semibold;
+    @include margin($margin-left:13px, $margin-bottom:10px);
     }
     p:first-child{ margin-top: 45px; }
 
@@ -24,7 +23,7 @@
             }
             
             button{
-                font-weight: 700;
+                font-weight: $font-bold;
                 color: white;
                 margin-bottom: 40px;
                 outline: none;
@@ -32,27 +31,27 @@
 
                 p{
                     color: white;
-                    margin: 0;
+                    @include margin;
                 }
 
                 &.buttons__examples__button--blue-lighter--regular{
-                color: $blue-color-1;
+                color: $blue-color-primary;
                 }
                 &.buttons__examples__button--blue-lighter--disabled{
-                color: rgb(110,172,210);
+                color: $bluelighter-disabled-text-color;
                 }
                 &.buttons__examples__button--pink-lighter--regular{
-                    color: $pink-color-1;
+                    color: $pink-color-primary;
                 }
                 &.buttons__examples__button--pink-lighter--disabled{
-                    color: rgb(236,96,118);
+                    color: $pinklighter-disabled-text-color;
                 }
             }
 
             &--blue{
 
                 &--regular{
-                    @include button-style($blue-color-1, 0px solid $blue-color-1, 0px solid $blue-color-1, 3px solid darken($blue-color-1, 10%), 0px solid $blue-color-1);
+                    @include button-style($blue-color-primary, 0px solid $blue-color-primary, 0px solid $blue-color-primary, 3px solid darken($blue-color-primary, 10%), 0px solid $blue-color-primary);
                 }
                 &--howered{
                     @include button-style($blue-howered-button-color, 0px solid $blue-howered-button-color, 0px solid $blue-howered-button-color, 3px solid darken($blue-howered-button-color, 10%), 0px solid $blue-howered-button-color);
@@ -63,13 +62,12 @@
             }
             &--pink{
                 & i{
-                     margin-right: 25px;
-                     margin-left: 30px;
-                     font-size: 22px;
+                     font-size: $icon-font-size;
+                     @include margin($margin-right: 25px, $margin-left: 30px);
                  }
 
                 &--regular{
-                    @include button-style($pink-color-1, 0px solid $pink-color-1, 0px solid $pink-color-1, 3px solid darken($pink-color-1, 10%), 0px solid $pink-color-1);
+                    @include button-style($pink-color-primary, 0px solid $pink-color-primary, 0px solid $pink-color-primary, 3px solid darken($pink-color-primary, 10%), 0px solid $pink-color-primary);
                 }
                 &--howered{
                     @include button-style($pink-howered-button-color, 0px solid $pink-howered-button-color, 0px solid $pink-howered-button-color, 3px solid darken($pink-howered-button-color, 10%), 0px solid $pink-howered-button-color);
@@ -81,10 +79,10 @@
             &--blue-lighter{
 
                 &--regular{
-                    @include button-style(white, 3px solid $blue-color-1, 3px solid $blue-color-1, 3px solid $blue-color-1, 3px solid $blue-color-1); 
+                    @include button-style(white, 3px solid $blue-color-primary, 3px solid $blue-color-primary, 3px solid $blue-color-primary, 3px solid $blue-color-primary); 
                 }
                 &--howered{
-                    @include button-style($blue-color-1, 0px solid $blue-color-1, 0px solid $blue-color-1, 0px solid $blue-color-1, 0px solid $blue-color-1);
+                    @include button-style($blue-color-primary, 0px solid $blue-color-primary, 0px solid $blue-color-primary, 0px solid $blue-color-primary, 0px solid $blue-color-primary);
                 }
                 &--disabled{
                     @include button-style($bluelighter-disabled-button-color, 0px solid $bluelighter-disabled-button-color, 0px solid $bluelighter-disabled-button-color, 0px solid $bluelighter-disabled-button-color, 0px solid $bluelighter-disabled-button-color);
@@ -93,10 +91,10 @@
             &--pink-lighter{
 
                 &--regular{
-                    @include button-style(white, 3px solid $pink-color-1, 3px solid $pink-color-1, 3px solid $pink-color-1, 3px solid $pink-color-1); 
+                    @include button-style(white, 3px solid $pink-color-primary, 3px solid $pink-color-primary, 3px solid $pink-color-primary, 3px solid $pink-color-primary); 
                 }
                 &--howered{
-                    @include button-style($pink-color-1, 0px solid $pink-color-1, 0px solid $pink-color-1, 0px solid $pink-color-1, 0px solid $pink-color-1);
+                    @include button-style($pink-color-primary, 0px solid $pink-color-primary, 0px solid $pink-color-primary, 0px solid $pink-color-primary, 0px solid $pink-color-primary);
                 }
                 &--disabled{
                     @include button-style($pinklighter-disabled-button-color, 0px solid $pinklighter-disabled-button-color, 0px solid $pinklighter-disabled-button-color, 0px solid $pinklighter-disabled-button-color, 0px solid $pinklighter-disabled-button-color);

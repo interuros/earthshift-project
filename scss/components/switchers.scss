@@ -1,0 +1,123 @@
+/*---------------------------------------------------------*/
+/*----------------SWITCHERS-----------------*/
+/*---------------------------------------------------------*/
+.switchers{
+    
+    &__examples{
+        width: 275px;
+        height: 218px;
+        flex-wrap: wrap;
+
+        &__example{
+            cursor: pointer;
+
+            &:first-child > div{
+                @include margin(30px, 50px, 35px, 53px);
+            }
+            &:nth-child(2) > div{
+                @include margin(30px, 0, 35px, 0);
+            }
+            &:nth-child(3) > div{
+                @include margin(0, 50px, 35px, 53px);
+            }
+            &:nth-child(4) > div{
+                @include margin(0, 0, 35px, 0);
+            }
+            &:nth-child(5) > div{
+                @include margin(0, 50px, 30px, 53px);
+            }
+
+            div{
+                @include flex-box($display: inline-flex, $justify-content: space-around, $align-items:center);
+                background-color: $grey-common;
+                position: relative;
+                width: 60px;
+                height: 30px;
+                transition: .5s;
+            }
+
+            i{
+                font-size: $icon-font-size;
+                color: $transparent-color;
+            }
+
+
+            input{
+                 display: none;
+                 
+                 &:checked + div:before{
+                    background-color: $grey-common;
+                    left: 33px;
+                 }
+            }
+
+            &--rounded{
+                
+                div{
+                    @include left-border-radius(16px, 16px);
+                    @include right-border-radius(16px, 16px);
+                }
+
+                div:before{
+                    content: "";
+                    position: absolute;
+                    width: 22px;
+                    height: 22px;
+                    left: 5px;
+                    @include left-border-radius(50%, 50%);
+                    @include right-border-radius(50%, 50%);
+                    transition: .2s;
+                    top: 4px;
+                }
+
+            }
+
+            &--pointed{
+                div{
+                    @include left-border-radius(8px, 16px);
+                    @include right-border-radius(16px, 8px);
+                }
+
+                div:before{
+                    content: "";
+                    position: absolute;
+                    width: 22px;
+                    height: 22px;
+                    left: 5px;
+                    @include left-border-radius(6px, 50%);
+                    @include right-border-radius(50%, 6px);
+                    transition: .2s;
+                    top: 4px;
+                }
+                p{
+                    color: $transparent-color;
+                    font-size: $font-size-smallest;
+                    font-weight: $font-semibold;
+                }
+
+            }
+
+            &--red{
+                div:before{
+                    background-color: $pink-color-secondary;
+                }
+                input:checked + div{
+                     background-color: $pink-color-secondary;
+                 }
+            }
+             &--blue{
+                div:before{
+                    background-color: $blue-color-secondary;
+                }
+                input:checked + div{
+                     background-color: $blue-color-secondary;
+                 }
+                
+                i {
+                    color: transparent;
+                }
+            }
+        
+        }
+    }
+}

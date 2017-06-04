@@ -2,14 +2,15 @@
 /*----------------COLOR SCHEME-----------------*/
 /*---------------------------------------------------------*/
 .color-scheme{
-    font-weight: 700;
+    font-weight: $font-bold;
 
     &__list{
         list-style: none;
         @include flex-box($align-items:center, $justify-content:center);
+        
         &__item{
+            @include margin (34px, 0, 34px, 68px);
 
-            margin: 34px 0 34px 68px;
             &:first-child{
                 margin-left: 82px;
             }
@@ -23,6 +24,7 @@
                 width: 200px;
                 margin-bottom: 23px;
                 @include flex-box($justify-content:space-around, $align-items:center);
+
                 & p{
                     width: 50%;
                     height: 100px;
@@ -39,34 +41,34 @@
 
                 &--pink{
                     p:first-child{
-                        background-color: $pink-color-1;
+                        background-color: $pink-color-primary;
                     }
                     p:last-child{
-                        background-color: $pink-color-2;
+                        background-color: $pink-color-secondary;
                     }
                 }
                 &--blue{
                     p:first-child{
-                        background-color: $blue-color-1;
+                        background-color: $blue-color-primary;
                     }
                     p:last-child{
-                        background-color: $blue-color-2;
+                        background-color: $blue-color-secondary;
                     }
                 }
                 &--sky{
                     p:first-child{
-                        background-color: $sky-color-1;
+                        background-color: $sky-color-primary;
                     }
                     p:last-child{
-                        background-color: $sky-color-2;
+                        background-color: $sky-color-secondary;
                     }
                 }
                 &--coal{
                     p:first-child{
-                        background-color: $coal-color-1;
+                        background-color: $coal-color-primary;
                     }
                     p:last-child{
-                        background-color: $coal-color-2;
+                        background-color: $coal-color-secondary;
                     }
                 }
             }

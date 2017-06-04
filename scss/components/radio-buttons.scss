@@ -11,13 +11,14 @@
             content: "";
             height: 1px;
             width: 1061px;
-            background-color: $sky-color-2;
-            margin: 0 auto;
+            background-color: $grey-common;
+            @include margin(0, auto, 0, auto);
         }
         &__example{
-            font-weight: 600;
-            color: $coal-color-1;
-            margin: 50px 0 48px 0;
+            font-weight: $font-semibold;
+            color: $coal-color-primary;
+            @include margin(50px, 0, 48px, 0);
+
             &:first-child{
                 margin-left: 53px;
                 width: 304px;
@@ -34,30 +35,28 @@
                 display: none;
             }
             input[type="radio"] + label:before{
-                @include custom-radio-checkbox($sky-color-2, 18px, 18px);
+                @include custom-radio-checkbox($grey-common, 18px, 18px);
                 @include right-border-radius(50%, 50%);
                 @include left-border-radius(50%, 50%);
                 content: "";
                 display: inline-block;
                 vertical-align: middle;
-                margin-right: 20px;
-                margin-top: -5px;
-                
+                @include margin(-5px, 20px);
             }
 
             &--off {
 
             }
             &--on input[type="radio"] + label:before{
-                @include custom-radio-checkbox($blue-color-1, 12px, 12px);
-                border: 3px solid $sky-color-2;
+                @include custom-radio-checkbox($blue-color-primary, 12px, 12px);
+                border: 3px solid $grey-common;
             }
             &--hovered input[type="radio"] + label:before{
-                @include custom-radio-checkbox($blue-color-1, 16px, 16px);
-                border: 1px solid $sky-color-2;
+                @include custom-radio-checkbox($blue-color-primary, 16px, 16px);
+                border: 1px solid $grey-common;
             }
             &--disabled{
-                color: $sky-color-2;
+                color: $grey-common;
             }
 
         }

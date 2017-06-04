@@ -5,13 +5,13 @@
 
 
     &__examples{
-            color: $coal-color-2;
+            color: $coal-color-secondary;
             padding-bottom: 70px;
             & p:first-child{
                 color: $title-color;
-                font-size: 16px;
-                font-weight: 600;
-                font-family: 'Open Sans';
+                font-size: $font-size-small;
+                font-weight: $font-semibold;
+                font-family: $font-family-common;
                 font-style: normal;
                 padding-top: 40px;
             }
@@ -19,20 +19,20 @@
                     font-family: 'Montserrat';
                     margin-left: 83px;
                     &--regular{
-                            font-size: 56px;
-                            font-weight: 400;
+                            font-size: $font-size-biggest;
+                            font-weight: $font-regular;
                     }
                     &--bold{
-                            font-weight: 700;
+                            font-weight: $font-bold;
 
                         &--48px{
-                            font-size: 48px;
+                            font-size: $font-size-very-big;
                         }
                         &--32px{
-                            font-size: 32px;
+                            font-size: $font-size-big;
                         }
                         &--24px{
-                            font-size: 24px;
+                            font-size: $font-size-medium-big;
                         }
                     }
                 }
@@ -41,19 +41,19 @@
                     font-family: 'Libre Baskerville';
                     margin-left: 83px;
                     &--italic{
-                        font-size: 20px;
-                        font-weight: 400;
+                        font-size: $font-size-medium;
+                        font-weight: $font-regular;
                         font-style: italic;
                     }
                     &--regular{
                         @include flex-box($align-items: flex-end);
 
                         &--20px{
-                            font-size: 20px;
+                            font-size: $font-size-medium;
                             margin-right: 115px;
                         }
                         &--16px{
-                            font-size: 16px;
+                            font-size: $font-size-small;
                         }
                     }
                 }
@@ -64,17 +64,17 @@
                     @include flex-box($align-items: flex-end);
 
                     &--regular{
-                        font-weight: 400;
-                        font-size: 15px;
+                        font-weight: $font-regular;
+                        font-size: $font-size-very-small;
                         margin-right: 260px;
                     }
                     &--italic{
-                        font-size: 15px;   
+                        font-size: $font-size-very-small;   
                         font-style: italic;
                     }
                  }
                  &--bold{
-                    font-weight: 700;
+                    font-weight: $font-bold;
                  }
                 }
 

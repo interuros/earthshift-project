@@ -1,0 +1,6 @@
+.sliders-switchers{
+
+    & > .row{
+        @include flex-box($justify-content: space-between);
+    }
+}

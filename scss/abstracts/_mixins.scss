@@ -20,6 +20,10 @@
     height: $height;
 }
 
+@mixin margin($margin-top: 0, $margin-right: 0, $margin-bottom: 0, $margin-left: 0){
+    margin: $margin-top $margin-right $margin-bottom $margin-left;
+}
+
 @mixin button-style($background-color, $border-top, $border-right, $border-bottom, $border-left){
       background-color: $background-color;
       border-top: $border-top;
@@ -29,7 +33,7 @@
 }
 
 @mixin custom-radio-checkbox($background-color, $height, $width){
-                background-color:$background-color;
-                height: $height;
-                width:  $width;
+      background-color:$background-color;
+      height: $height;
+      width:  $width;
 }
