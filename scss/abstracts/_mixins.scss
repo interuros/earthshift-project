@@ -8,6 +8,10 @@
     border-bottom-right-radius: $bottom-right;
 }
 
+@mixin border($width, $style, $color){
+    border: $width $style $color;
+}
+
 @mixin flex-box($display: flex, $justify-content: flex-start, $align-items: flex-start, $flex-direction: row){
     display: $display;
     justify-content: $justify-content;

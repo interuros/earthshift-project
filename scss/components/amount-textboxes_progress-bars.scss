@@ -1,0 +1,9 @@
+/*---------------------------------------------------------*/
+/*----------------AMOUNT TEXTBOXES AND PROGRESS BARS-----------------*/
+/*---------------------------------------------------------*/
+.amount-textboxes_progress-bars{
+
+    &>.row{
+        @include flex-box($justify-content:space-between);
+    }
+}

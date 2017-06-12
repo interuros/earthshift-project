@@ -559,9 +559,7 @@ body {
 /*----------------SWITCHERS-----------------*/
 /*---------------------------------------------------------*/
 .switchers__examples {
-  width: 275px;
-  height: 218px;
-  flex-wrap: wrap; }
+  width: 275px; }
   .switchers__examples__example {
     cursor: pointer; }
     .switchers__examples__example:first-child > div {
@@ -639,4 +637,133 @@ body {
     .switchers__examples__example--blue input:checked + div {
       background-color: #428ebe; }
     .switchers__examples__example--blue i {
-      color: transparent; }
+      color: rgba(0, 0, 0, 0.4); }
+
+/*---------------------------------------------------------*/
+/*----------------AMOUNT TEXTBOXES AND PROGRESS BARS-----------------*/
+/*---------------------------------------------------------*/
+.amount-textboxes_progress-bars > .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row; }
+
+/*---------------------------------------------------------*/
+/*----------------PROGRESS BARS-----------------*/
+/*---------------------------------------------------------*/
+.progress-bars {
+  width: 860px; }
+  .progress-bars__list {
+    list-style: none;
+    height: 373px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap; }
+    .progress-bars__list__example span {
+      display: block;
+      position: relative; }
+      .progress-bars__list__example span::before {
+        width: 350px;
+        position: absolute; }
+    .progress-bars__list__example--small div {
+      width: 344px;
+      padding: 3px;
+      border-top-right-radius: 15px;
+      border-bottom-right-radius: 15px;
+      border-top-left-radius: 15px;
+      border-bottom-left-radius: 15px;
+      border: 1px solid #e9e9e9; }
+      .progress-bars__list__example--small div span {
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        height: 22px; }
+        .progress-bars__list__example--small div span::before {
+          height: 30px;
+          text-align: center; }
+    .progress-bars__list__example--big div {
+      width: 344px;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+      border: 1px solid #e9e9e9;
+      border-right: 2px solid #d0d0d0; }
+      .progress-bars__list__example--big div span {
+        border-top-right-radius: 2px;
+        border-bottom-right-radius: 2px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        height: 38px; }
+        .progress-bars__list__example--big div span::before {
+          width: 330px;
+          height: 38px;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          flex-direction: row; }
+    .progress-bars__list__example--pink {
+      margin: 35px 50px 60px 45px; }
+      .progress-bars__list__example--pink span {
+        background-color: #d14e63;
+        width: 40%; }
+        .progress-bars__list__example--pink span::before {
+          content: "40%"; }
+    .progress-bars__list__example--blue {
+      margin: 0 50px 60px 45px; }
+      .progress-bars__list__example--blue span {
+        background-color: #4aa0d5;
+        width: 83%; }
+        .progress-bars__list__example--blue span::before {
+          content: "83%";
+          color: white; }
+    .progress-bars__list__example--sky {
+      margin: 30px 0 50px 0; }
+      .progress-bars__list__example--sky span {
+        background-color: #c0cfd6;
+        width: 42%;
+        border-bottom: 2px solid #b1c3cc; }
+        .progress-bars__list__example--sky span::before {
+          content: "42%"; }
+    .progress-bars__list__example--coal {
+      margin: 0 0 55px 0; }
+      .progress-bars__list__example--coal span {
+        background-color: #3d3d4a;
+        width: 78%;
+        border-bottom: 2px solid #31313c; }
+        .progress-bars__list__example--coal span::before {
+          content: "78%"; }
+    .progress-bars__list__example .c100.normal {
+      font-size: 100px; }
+      .progress-bars__list__example .c100.normal:after {
+        width: 60px;
+        height: 60px;
+        top: 20px;
+        left: 20px; }
+    .progress-bars__list__example .c100.blue {
+      background-color: #e9e9e9;
+      margin: 0 140px 0 140px; }
+      .progress-bars__list__example .c100.blue span {
+        color: #3d3d4a; }
+      .progress-bars__list__example .c100.blue:after {
+        background-color: white; }
+      .progress-bars__list__example .c100.blue .bar, .progress-bars__list__example .c100.blue .fill {
+        border-color: #4aa0d5; }
+    .progress-bars__list__example .c100.sky {
+      background-color: white;
+      margin: 0 140px 0 0; }
+      .progress-bars__list__example .c100.sky span {
+        color: #3d3d4a; }
+      .progress-bars__list__example .c100.sky:after {
+        background-color: white; }
+      .progress-bars__list__example .c100.sky .bar, .progress-bars__list__example .c100.sky .fill {
+        border-color: #d8e9f0; }
+    .progress-bars__list__example .c100.pink {
+      background-color: #f292a1; }
+      .progress-bars__list__example .c100.pink span {
+        color: white; }
+      .progress-bars__list__example .c100.pink:after {
+        background-color: #3d3d4a; }
+      .progress-bars__list__example .c100.pink .bar, .progress-bars__list__example .c100.pink .fill {
+        border-color: #e8415b; }

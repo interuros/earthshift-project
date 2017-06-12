@@ -5,8 +5,6 @@
     
     &__examples{
         width: 275px;
-        height: 218px;
-        flex-wrap: wrap;
 
         &__example{
             cursor: pointer;
@@ -114,7 +112,7 @@
                  }
                 
                 i {
-                    color: transparent;
+                    color: $transparent-color;
                 }
             }
         
