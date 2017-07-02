@@ -5,7 +5,7 @@
     &__list{
         list-style: none;
         @include flex-box($justify-content:flex-start, $align-items:center);
-        flex-wrap: wrap;
+    
 
         &__example{
             font-weight: $font-semibold;

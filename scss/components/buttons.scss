@@ -8,13 +8,13 @@
     font-weight: $font-semibold;
     @include margin($margin-left:13px, $margin-bottom:10px);
     }
-    p:first-child{ margin-top: 45px; }
 
     &__examples{
         @include flex-box($align-items: center);
 
         &__button{
             margin-right: 65px;
+            margin-top: 45px;
             &:first-child{
                 margin-left: 28px;
             }

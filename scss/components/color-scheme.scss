@@ -6,19 +6,10 @@
 
     &__list{
         list-style: none;
-        @include flex-box($align-items:center, $justify-content:center);
+        @include flex-box($align-items:center, $justify-content:space-around);
         
         &__item{
-            @include margin (34px, 0, 34px, 68px);
-
-            &:first-child{
-                margin-left: 82px;
-            }
-            &:last-child{
-                margin-right: 81px;
-            }
-
-
+            @include margin (34px, 0, 34px, 0);
 
             &__colors{
                 width: 200px;

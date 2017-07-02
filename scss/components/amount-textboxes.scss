@@ -1,0 +1,183 @@
+.amount-textboxes{
+    width: 280px;
+    &__list{
+        height: 375px;
+        list-style: none;
+        @include flex-box;
+        flex-wrap: wrap;
+        &__item{
+            height: 125px;
+            width: 50%;
+            &:last-of-type{
+                width: 100%;
+            }
+
+            &--arrows{
+                @include flex-box($flex-direction: column, $align-items:center, $justify-content:center);
+                & *{
+                    width: 50px;
+                    @include flex-box($align-items:center, $justify-content:center);
+                    font-weight: $font-bold;
+                }
+                & p{
+                    height: 40px;
+                    color: $coal-color-secondary;
+                    font-size: $font-size-medium;
+                    border-right: 1px solid $grey-common;
+                    border-left: 1px solid $grey-common;
+                }
+
+                & i{
+                    height: 25px;
+                    font-size: $font-size-medium;
+                    color: $transparent-color;
+                    border: 1px solid $grey-common;
+                    &:first-of-type{
+                        @include right-border-radius(5px, 0);
+                        @include left-border-radius(5px, 0);
+                    }
+                    &:last-of-type{
+                        @include right-border-radius(0, 5px);
+                        @include left-border-radius(0, 5px);
+                    }
+                }
+
+                &-side{
+                    @include flex-box($align-items:center, $justify-content:center);
+
+                    & *{
+                        height: 50px;
+                        @include flex-box($align-items:center, $justify-content:center);
+                         font-weight: $font-bold;
+                    }
+                    & p{
+                        width: 50px;
+                        color: $coal-color-secondary;
+                        font-size: $font-size-small;
+                        border-top: 1px solid $grey-common;
+                        border-bottom: 1px solid $grey-common;
+                        border-left: 1px solid $grey-common;
+                        @include left-border-radius(5px, 5px);
+                    }
+                    & div{
+                        @include flex-box($flex-direction: column, $align-items:center, $justify-content:center);
+                    }
+                    & i{
+                        width: 30px;
+                        height: 25px;
+                        font-size: $font-size-small;
+                        color: $transparent-color;
+                        border: 1px solid $grey-common;
+                        &:first-of-type{
+                            @include right-border-radius(5px, 0);
+                            border-bottom: none;
+                        }
+                        &:last-of-type{
+                            @include right-border-radius(0, 5px);
+                        }
+                    }
+                }
+            }
+
+            &--standard{
+                @include flex-box($align-items:center, $justify-content:center);
+                & *{
+                    height: 50px;
+                    @include flex-box($align-items:center, $justify-content:center);
+                    font-weight: $font-bold;
+                }
+                & p{
+                    width: 50px;
+                    color: $coal-color-secondary;
+                    font-size: $font-size-small;
+                    border-top: 1px solid $grey-common;
+                    border-bottom: 1px solid $grey-common;
+                }
+
+                & i{
+                    width: 30px;
+                    font-size: $font-size-medium;
+                    color: $transparent-color;
+                    border: 1px solid $grey-common;
+                    &:first-of-type{
+                        @include left-border-radius(5px, 5px);
+                    }
+                    &:last-of-type{
+                        @include right-border-radius(5px, 5px);
+                    }
+                }
+                &-side{
+                    @include flex-box($align-items:center, $justify-content:center);
+
+                    & *{
+                        height: 50px;
+                        @include flex-box($align-items:center, $justify-content:center);
+                         font-weight: $font-bold;
+                    }
+                    & p{
+                        width: 50px;
+                        color: $coal-color-secondary;
+                        font-size: $font-size-small;
+                        border-top: 1px solid $grey-common;
+                        border-bottom: 1px solid $grey-common;
+                        border-left: 1px solid $grey-common;
+                        @include left-border-radius(5px, 5px);
+                    }
+                    & div{
+                        @include flex-box($flex-direction: column, $align-items:center, $justify-content:center);
+                    }
+                    & i{
+                        width: 30px;
+                        height: 25px;
+                        font-size: $font-size-small;
+                        color: $transparent-color;
+                        border: 1px solid $grey-common;
+                        &:first-of-type{
+                            @include right-border-radius(5px, 0);
+                            border-bottom: none;
+                        }
+                        &:last-of-type{
+                            @include right-border-radius(0, 5px);
+                        }
+                    }
+                }
+
+                &-big{
+                    @include flex-box($align-items:center, $justify-content:center);
+                    & *{
+                        height: 50px;
+                        @include flex-box($align-items:center, $justify-content:center);
+                         font-weight: $font-bold;
+                    }
+                    & p{
+                        width: 30px;
+                        color: $coal-color-secondary;
+                        font-size: $font-size-small;
+                        border-top: 1px solid $grey-common;
+                        border-bottom: 1px solid $grey-common;
+
+                        &:first-of-type, &:last-of-type{
+                            font-size: $font-size-common;
+                            color: $sky-color-secondary;
+                        }
+                    }
+                    & i{
+                        width: 50px;
+                        font-size: $font-size-small;
+                        color: $transparent-color;
+                        border: 1px solid $grey-common;
+                        &:first-of-type{
+                            @include left-border-radius(50%, 50%);
+                        }
+                        &:last-of-type{
+                            @include right-border-radius(50%, 50%);
+                        }
+                    }
+                }
+                
+            }
+
+
+        }
+    }
+}

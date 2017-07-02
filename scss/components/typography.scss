@@ -7,6 +7,9 @@
     &__examples{
             color: $coal-color-secondary;
             padding-bottom: 70px;
+
+
+            & > div{ margin-left: 83px; }
             & p:first-child{
                 color: $title-color;
                 font-size: $font-size-small;
@@ -17,7 +20,7 @@
             }
                 &__montserrat{
                     font-family: 'Montserrat';
-                    margin-left: 83px;
+                    
                     &--regular{
                             font-size: $font-size-biggest;
                             font-weight: $font-regular;
@@ -39,7 +42,6 @@
 
                 &__libre-baskerville{
                     font-family: 'Libre Baskerville';
-                    margin-left: 83px;
                     &--italic{
                         font-size: $font-size-medium;
                         font-weight: $font-regular;
@@ -59,7 +61,6 @@
                 }
 
                 &__open-sans{
-                    margin-left: 83px;
                  &--15px{
                     @include flex-box($align-items: flex-end);
 

@@ -88,7 +88,7 @@
                 div{
                     width: 195px;
                     height: 10px;
-                    background: linear-gradient(-45deg,black 5px, $blue-slider-light 5px);
+                    background: repeating-linear-gradient(-70deg, $dark-stripe, $dark-stripe 5px, $light-stripe 5px, $light-stripe 10px), linear-gradient(90deg, $blue-slider-dark, $blue-slider-light);
                     margin-left: 65px;
 
                 }
@@ -103,7 +103,7 @@
                 div{
                     width: 265px;
                     height: 10px;
-                    background: linear-gradient(-45deg,$pink-slider-dark 5px, $pink-slider-light 5px);
+                    background: repeating-linear-gradient(-70deg, $dark-stripe, $dark-stripe 5px, $light-stripe 5px, $light-stripe 10px), linear-gradient(90deg, $pink-slider-dark, $pink-slider-light);    
                     margin-left: 30px;
                 }
                 &:before{
@@ -112,8 +112,12 @@
                 &:after{
                     left: 285px;
                 }
+                &:hover > p{
+                    display: block;
+                }
 
                 p{
+                    display: none;
                     position: absolute;
                     padding: 7px 13px;
                     background-color: $coal-color-secondary;    
