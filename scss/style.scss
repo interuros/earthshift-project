@@ -1,7 +1,7 @@
 @import "abstracts/mixins.scss";
 @import "abstracts/variables.scss";
 @import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i|Montserrat:400,700|Open+Sans:300,400,400i,600,700');
-
+@import "base/split.scss";
 
 @import "components/body.scss";
 @import "components/common.scss";
@@ -11,11 +11,10 @@
 @import "components/action-notification.scss";
 @import "components/radio-buttons.scss";
 @import "components/checkboxes.scss";
-@import "components/sliders-switchers.scss";
 @import "components/sliders.scss";
 @import "components/switchers.scss";
-@import "components/amount-textboxes_progress-bars.scss";
 @import "components/progress-bars.scss";
 @import "components/amount-textboxes.scss";
+@import "components/tooltips.scss";
 
 

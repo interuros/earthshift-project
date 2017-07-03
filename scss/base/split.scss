@@ -1,5 +1,4 @@
-.sliders-switchers{
-
+.split {
     & > .row{
         @include flex-box($justify-content: space-between);
     }

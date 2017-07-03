@@ -1,0 +1,80 @@
+/*---------------------------------------------------------*/
+/*----------------TOOLTIPS-----------------*/
+/*---------------------------------------------------------*/
+.tooltips{
+
+    &__examples{
+
+        height: 373px;
+        width: 280px;
+        @include flex-box($flex-direction: column, $justify-content: space-around, $align-items:center);
+        @include flex-box($flex-direction: column, $justify-content: space-around, $align-items:center);
+
+
+        &--blue{
+            width: 150px;
+            height: 50px;
+            position: relative;
+            background-color: $sky-color-primary;
+            @include right-border-radius;
+            @include left-border-radius;
+            @include flex-box($justify-content: center, $align-items:center);
+
+            &:after{
+                content: "";
+                width: 0;
+                height: 0;
+                @include border (8px, solid, transparent);
+                position: absolute;
+                top: 100%;
+                left: 45%;
+                border-top-color: $sky-color-primary;
+            }
+        }
+        &--black{
+            color: white;
+            width: 225px;
+            height: 70px;
+            position: relative;
+            background-color: $coal-color-secondary;   
+            @include right-border-radius;
+            @include left-border-radius;
+            @include flex-box($flex-direction:column, $justify-content: center, $align-items:center); 
+            & a{
+                color: white;
+            }
+
+            &:after{
+                content: "";
+                width: 0;
+                height: 0;
+                @include border (8px, solid, transparent);
+                position: absolute;
+                top: 39.5%;
+                left: -16px;
+                border-right-color: $coal-color-secondary;
+            }
+
+        }
+        &--white{
+            width: 225px;
+            height: 100px;
+            @include border(1px, solid, darken($grey-common, 15%));
+            @include right-border-radius($bottom-right: 0px);
+            @include left-border-radius;
+            @include flex-box($flex-direction:column, $justify-content: center, $align-items:center); 
+            & a{
+                color: $coal-color-secondary;
+            }
+            text-align: justify;
+
+            & b{
+                margin-bottom: 7px;
+            }
+            
+            & > *{
+                width: 190px;
+            }
+        }
+    }
+}
