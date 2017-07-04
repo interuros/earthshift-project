@@ -1,0 +1,323 @@
+/*---------------------------------------------------------*/
+/*----------------INPUTS-----------------*/
+/*---------------------------------------------------------*/
+.inputs{
+    &__examples{
+        @include flex-box;
+        flex-wrap: wrap;
+        list-style: none;
+        width: 860px;
+        height: 373px;
+
+        &__example{
+            width: 33.33%;
+
+            &:nth-child(2){
+                width: 27.3%;
+            }
+            &:nth-child(3){
+                width: 39.37%;
+            }
+
+            &--arrow{
+                & label{
+                    margin-top: 30px;
+                    margin-left: 35px;
+                    width: 247px;
+                    height: 40px;
+                    @include right-border-radius(20px, 20px);
+                    @include left-border-radius(20px, 20px);
+                    @include border(1px, solid, $grey-common);
+                    @include flex-box($justify-content:space-between, $align-items:center);
+
+                    & > input[type="text"]{
+                    border: none;
+                    outline: none;
+                    margin-left: 15px;
+                    font-size: $font-size-small;
+                    width: 150px;
+                    }
+
+                    & > i{
+                        @include right-border-radius(20px, 20px);
+                        @include left-border-radius(20px, 20px);
+                        color: white;
+                        background-color: $blue-color-primary;
+                        width: 62px;
+                        height: 36px;
+                        text-align: center;
+                        font-size: $font-size-medium-big;
+                        margin-right: 2px;
+                    }
+                
+
+                }
+            }
+
+            &--dropdown{
+
+               & div {
+                    @include flex-box($justify-content:space-between, $align-items:center);
+                    width: 200px;
+                    height: 40px;
+                    margin-top: 30px;
+                     margin-left: 33px;
+                    @include border(1px, solid, darken($grey-common, 15%));
+                    @include right-border-radius(20px, 20px);
+                    @include left-border-radius(20px, 20px);
+
+                    & > p{
+                        margin-left: 20px;
+                        font-weight: $font-semibold;
+                        color: $coal-color-secondary;
+                    }
+                    & > i{
+                        margin-right: 18px;
+                        font-size: $font-size-small;
+                        color: $coal-color-secondary;
+
+                    }
+                }
+            }
+
+
+            &--search{
+
+                & label{
+                    @include flex-box($justify-content:space-between, $align-items:center);
+                    @include border(1px, solid, darken($grey-common, 15%));
+                    @include right-border-radius(20px, 20px);
+                    @include left-border-radius(20px, 20px);
+                    width: 300px;
+                    height: 40px;
+                    margin-top: 30px;
+                    margin-left: 27px;
+
+                    & > i{
+                        color: $grey-common;
+                        margin-left: 14px;
+                        font-size: $font-size-medium;
+                    }
+
+                     & > input[type="text"]{
+                        width: 150px;
+                        font-size: $font-size-small;
+                        border: none;
+                        outline: none;
+                    }
+
+                    & > p{
+                        color: white;
+                        width: 98px;
+                        height: 100%;
+                        background-color: $coal-color-secondary;
+                        @include right-border-radius(20px, 20px);
+                        @include flex-box($justify-content:center, $align-items:center);
+                    }
+                }
+            }
+
+            &--verification{
+               
+                p{
+                    margin-bottom: 5px;
+                    margin-left: 22px;
+                    color: $coal-color-secondary;
+                    font-weight: $font-semibold;
+                }
+                & div{
+                    margin-bottom: 20px;
+                    margin-left: 35px;
+                    
+
+                    & > label{
+                        width: 247px;
+                        height: 40px;
+                        @include border(1px, solid, $grey-common); 
+                        @include right-border-radius(20px, 20px);
+                        @include flex-box($justify-content:space-between, $align-items:center);
+                        @include left-border-radius(20px, 20px);
+
+
+                        & > i{
+                            font-size: $font-size-medium;
+                            color: darken($grey-common, 25%);
+
+                            &:first-of-type{
+                                width: 50px;
+                                height: 40px;
+                                margin-left: -1px;
+                                @include border(1px, solid, darken($grey-common, 25%));
+                                @include left-border-radius(20px, 20px);
+                                @include flex-box($justify-content:center, $align-items:center);
+                            }
+
+                            &:last-child{
+                                margin-right: 15px;
+                            }
+                        }
+
+                        & input{
+                            outline: none;
+                            border: none;
+                            font-size: $font-size-small;
+                            font-weight: $font-semibold;
+                            width: 150px;
+                        }
+                    }
+                }
+
+                & .email{
+                    & input{
+                        margin-right: 30px
+                    }
+                }
+
+                & .password-visible{
+                    
+                    & input{
+                        margin-left: 10px;
+                    }
+
+                    & label{
+                        @include border(1px, solid, darken($grey-common, 25%)); 
+                    }
+                }
+                & .password-hidden{
+                    
+                    & input{
+                        margin-left: 10px;
+                    }
+                    & label{
+                        @include border(1px, solid, darken($grey-common, 25%)); 
+                    }
+                }
+                
+            }
+
+            &--dropdown-hovered{
+                @include flex-box;
+
+                & .dropdown{
+                    margin-top: 23px;
+                    margin-left: 30px;
+                    position: relative;
+                    
+
+                    & .hover{
+                        width: 200px;
+                        height: 40px;
+                        @include border(1px, solid, darken($grey-common, 15%)); 
+                        @include right-border-radius(20px, 20px);
+                        @include left-border-radius(20px, 20px);
+                        @include flex-box($justify-content:space-between, $align-items:center);
+
+                        & p{
+                            margin-left: 20px;
+                            font-weight: $font-semibold;
+                            color: $coal-color-secondary;
+                        }
+                        & i{
+                            margin-right: 18px;
+                        }
+
+                        &:hover + .list{
+                            display: block;
+                        }
+
+                    }
+
+                    & > .list{
+                        list-style: none;
+                        display: none;
+                        position: absolute;
+                        margin-top: 10px;
+                        width: 200px;
+                        @include border(1px, solid, darken($grey-common, 15%)); 
+                        @include right-border-radius(20px, 20px);
+                        @include left-border-radius(20px, 20px); 
+
+                        & li{
+                            padding: 10px 0;
+                            margin-bottom: 5px;
+                            width: 100%;
+
+                            & p{
+                                margin-left: 20px;
+                                font-weight: $font-semibold;
+                                color: $coal-color-secondary;
+                            }
+
+                            &:first-of-type{
+                                margin-top: 10px;
+                            }
+
+                            &:nth-child(2){
+                                background-color: darken($grey-common, 5%);
+                            }
+
+                            &:nth-child(4){
+                                & p{
+                                    color: $grey-common;
+                                }
+                            }
+                        }
+                    }
+                }
+            }   
+
+            &--registration{
+
+                & > div{
+                    width: 250px;
+                    height: 40px;
+                    margin-bottom: 20px;
+                    @include right-border-radius(20px, 20px);
+                    @include left-border-radius(20px, 20px);
+                    @include flex-box($justify-content:space-between, $align-items:center);
+                    @include border(1px, solid, blue);
+
+                    &:first-child{
+                        margin-top: 23px;
+                    }
+
+                    &:last-child p{
+                        color: $grey-common;
+                    }
+                }
+
+                & p{
+                    margin-left: 20px;
+                    color: $coal-color-secondary;
+                    font-size: $font-size-small;
+
+
+                }
+
+                & i{
+                    margin-right: 15px;
+                    font-size: $font-size-medium-big;
+                }
+
+                & .wrong{
+                    border-color: $action-notification-red;
+                    color: $action-notification-red;
+                }
+                & .correct{
+                    border-color: $action-notification-green;
+                    color: $action-notification-green;
+                }
+                & .username{
+                    border-color: $grey-common;
+                }
+                & .request{
+                    border-color: $coal-color-secondary;
+                }
+                
+
+            }
+
+
+        }
+    }
+}
