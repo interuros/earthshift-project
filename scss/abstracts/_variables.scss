@@ -37,6 +37,17 @@ $pink-slider-light: rgb(253, 73, 101);
 $dark-stripe: rgba(0,0,0,0.1);
 $light-stripe: rgba(0,0,0,0);
 
+// === miscellaneous color ===
+
+$green-color: rgb(3,182,41);
+$cyan-color: rgb(3,182,163);
+$light-blue-color: rgb(3,155,182);
+$dark-blue-color: rgb(3,100,182);
+$purple-color: rgb(83,3,182);
+$magenta-color: rgb(146,3,182);
+$pink-color: rgb(182,3,159);
+$red-color: rgb(182,3,79);
+
 
 // === FONTS ===
 
@@ -48,6 +59,7 @@ $font-semibold: 600;
 // === font size ===
 $font-size-common: 14px;
 $font-size-smallest:10px;
+$font-size-ultra-small: 13px;
 $font-size-very-small: 15px;
 $font-size-small: 16px;
 $font-size-medium: 20px;
