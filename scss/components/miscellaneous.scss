@@ -1,3 +1,6 @@
+/*---------------------------------------------------------*/
+/*----------------MISCELLANEOUS-----------------*/
+/*---------------------------------------------------------*/
 .miscellaneous{
     @include flex-box($justify-content: space-between, $align-items: center);
     height: 300px;
