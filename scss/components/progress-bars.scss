@@ -1,176 +1,257 @@
-/*---------------------------------------------------------*/
-/*----------------PROGRESS BARS-----------------*/
-/*---------------------------------------------------------*/
 .progress-bars{
 
-    width: 860px;
-    &__list{
-        list-style: none;
+    &__examples{
         height: 375px;
-        @include flex-box;
-        flex-wrap: wrap;
+        width: 860px; 
 
-        &__example{
-            span{
-                display: block;
-                position: relative;
+        &__normal{
+            list-style: none;
+            @include flex-box;
+            flex-wrap: wrap;
+            &__example{
+                width: 50%;
 
-                &::before{
-                        width: 350px;
-                        position: absolute;
+                & > progress{
+                    -webkit-appearance: none;
+                    position: relative;
+                    width: 350px;
+                }
+
+                &--thin{
+                    height: 30px;
+
+                    &::-webkit-progress-bar{
+                        @include right-border-radius(20px,20px);
+                        @include left-border-radius(20px,20px);
+                        @include flex-box($align-items:center);
+                        background-color: white;
+                        @include border (2px, solid, $grey-common);
                     }
-            }
-            &--small {
-               div{
-                    width: 344px;
-                    padding: 3px;
-                    @include right-border-radius(15px,15px);
-                    @include left-border-radius(15px,15px);
-                    @include border(1px, solid, $grey-common);
-                
-                   span {
-                        @include right-border-radius(15px,15px);
-                        @include left-border-radius(15px,15px);
+
+                    &::-webkit-progress-value{
                         height: 22px;
+                        @include right-border-radius(20px,20px);
+                        @include left-border-radius(20px,20px);
+                        margin-left: 2px;
+                    }
 
-                        &::before{
-                            height: 30px;
-                            text-align: center;
-                        }
+                    &::before{
+                        content: "";
+                        width: 350px;
+                        height: 30px;
+                        position: absolute;
+                        font-size: $font-size-ultra-small;
+                        @include flex-box($align-items:center,$justify-content:center);
                     }
                 }
-            }
-            &--big {
-               div{
-                    width: 344px;
-                    @include left-border-radius(10px,10px);
-                    @include border(1px, solid, $grey-common);
-                    border-right: 2px solid darken($grey-common, 10%);
 
-                   span {
-                        @include right-border-radius(2px,2px);
-                        @include left-border-radius(10px,10px);
-                        height: 38px;
+                &--red{
+                    @include margin(35px, 0, 0, 45px);
 
-                        &::before{
-                            width: 330px;
-                            height: 38px;
-                            @include flex-box($justify-content:flex-end, $align-items:center);
-                        }
+                    &::-webkit-progress-value{
+                        background-color: $pink-color-secondary;
                     }
-                }
-            }
-            &--pink{
-                @include margin(35px, 50px, 60px, 45px);
-                
-                span{
-                    background-color: $pink-color-secondary;
-                    width: 40%;
 
                     &::before{
                         content: "40%";
                     }
                 }
-            }
-            &--blue{
-                @include margin(0, 50px, 60px, 45px);
-                
-                span{
-                    background-color: $blue-color-primary;
-                    width: 83%;
+                &--blue{
+                    @include margin(60px, 0, 0, 45px);
+
+                    &::-webkit-progress-value{
+                        background-color: $blue-color-primary;
+                    }
 
                     &::before{
                         content: "83%";
                         color: white;
                     }
                 }
-            }
-            &--sky{
-                @include margin(30px, 0, 50px, 0);
 
-                span{
-                    background-color: $sky-color-secondary;
-                    width: 42%;
-                    border-bottom: 2px solid darken($sky-color-secondary, 5%);
+
+                &--thick{
+                    height: 40px;
+
+                    &::-webkit-progress-bar{
+                        @include left-border-radius(10px,10px);
+                        @include flex-box($align-items:center);
+                        background-color: white;
+                        @include border (1px, solid, $grey-common);
+                        border-right:2px solid darken($grey-common, 20%);
+                    }
+
+                    &::-webkit-progress-value{
+                        height: 39px;
+                        @include right-border-radius(3px,3px)
+                        @include left-border-radius(10px,10px);
+                        @include border(3px, solid, transparent);
+                    }
+
+                    &::before{
+                        content: "";
+                        width: 335px;
+                        height: 40px;
+                        position: absolute;
+                        font-size: $font-size-ultra-small;
+                        @include flex-box($align-items:center,$justify-content:flex-end);
+                    }
+                }
+
+                &--grey{
+                    @include margin(30px, 65px, 0, 0);
+
+                    &::-webkit-progress-value{
+                        background-color: $sky-color-secondary;
+                        border-bottom-color: darken($sky-color-secondary, 5%);
+                    }
 
                     &::before{
                         content: "42%";
                     }
                 }
-            }
-            &--coal{
-                @include margin(0, 0, 55px, 0);
+                &--black{
+                    @include margin(55px, 65px, 0, 0);
 
-                span{
-                    background-color: $coal-color-secondary;
-                    width: 78%;
-                    border-bottom: 2px solid darken($coal-color-secondary, 5%);
+                    &::-webkit-progress-value{
+                        background-color: $coal-color-secondary;
+                        border-bottom-color: darken($coal-color-secondary, 5%);
+                    }
+
                     &::before{
                         content: "78%";
                     }
                 }
             }
-
-// === circular progress bars ===         
-
-            .c100.normal{
-                font-size: 100px;
-
-                &:after{
-                    width: 60px;
-                    height: 60px;
-                    top: 20px;
-                    left: 20px;
-                
-                }
-            }
-            .c100.blue{
-                background-color: $grey-common;
-                @include margin(0,140px, 0, 140px);
-                & span{
-                color: $coal-color-secondary;
-                }
-                &:after{
-                    background-color: white;
-                }
-
-                & .bar, & .fill{
-                border-color: $blue-color-primary;
-                }
-            }
-
-            .c100.sky{
-                background-color: white;
-                @include margin(0,140px, 0, 0);
-
-                & span{
-                    color: $coal-color-secondary;
-                }
-                &:after{
-                    background-color: white;
-                }
-
-                & .bar, & .fill{
-                    border-color: $sky-color-primary;
-                    
-                }
-            }
-
-            .c100.pink{
-                background-color: $pink-disabled-button-color;
-
-                & span{
-                    color: white;
-                }
-                &:after{
-                    background-color: $coal-color-secondary;
-                }
-
-                & .bar, & .fill{
-                    border-color: darken($pink-color-primary, 5%);
-                }
-            }
-
         }
+
+        &__rounded{
+            list-style: none;
+            @include flex-box($justify-content:center, $align-items:center);
+            margin-top: 55px;
+
+            &__example{
+                &  .circle{
+                    width: 100px;
+                    height: 100px;
+                    position: relative;
+                    @include flex-box($justify-content:center);
+
+                    & .overflow{
+                        width: 50px;
+                        height: 100px;
+                        overflow: hidden;
+
+                        & .left-circle{
+                            width: 100px;
+                            height: 100px;
+                            border: 20px solid transparent;
+                            border-radius: 100%;
+                        }
+
+                        & .right-circle{
+                            width: 100px;
+                            height: 100px;
+                            border: 20px solid transparent;
+                            border-radius: 100%;
+                            margin-left: -50px;
+                        }
+                    }
+
+                    span{
+                        width: 60px;
+                        height: 60px;
+                        font-size: $font-size-small;
+                        font-weight: $font-semibold;
+                        color: $coal-color-secondary;
+                        @include flex-box($align-items:center, $justify-content:center);
+                        position: absolute;
+                        border-radius: 100%;
+                        top: 20%;
+                        left: 20%;
+                    }
+                }
+
+                &--blue{
+
+                    .circle{
+
+                        .overflow{
+                            .left-circle{
+                                    transform: rotateZ(135deg);
+                                    border-bottom-color: $grey-common;
+                                    border-left-color: $grey-common;
+                                    border-top-color: $blue-color-primary;
+                                    border-right-color: $blue-color-primary;
+                            }
+
+                            .right-circle{
+                                border-top-color: $blue-color-primary;
+                                border-left-color: $blue-color-primary;
+                                border-right-color: $grey-common;
+                                border-bottom-color: $grey-common;
+                                transform: rotateZ(135deg);
+                            }
+                        }
+                    }
+                }
+                &--sky{
+                    .circle{
+
+                        .overflow{
+                            .left-circle{
+                                    transform: rotateZ(73.8deg);
+                                    border-top-color: $sky-color-primary;
+                                    border-right-color: $sky-color-primary;
+                            }
+
+                            .right-circle{
+                                border-top-color: $sky-color-primary;
+                                border-left-color: $sky-color-primary;
+                                transform: rotateZ(135deg);
+                            }
+                        }
+                    }
+                }
+                &--pink{
+                    .circle{
+                        .overflow{
+                            .left-circle{
+                                    transform: rotateZ(45deg);
+                                    border-bottom-color: $pink-disabled-button-color;
+                                    border-left-color: $pink-disabled-button-color;
+                                    border-top-color: darken($pink-color-primary, 5%);
+                                    border-right-color: darken($pink-color-primary, 5%);
+                            }
+                            .right-circle{
+                                border-top-color: darken($pink-color-primary, 5%);
+                                border-left-color: darken($pink-color-primary, 5%);
+                                border-right-color: $pink-disabled-button-color;
+                                border-bottom-color: $pink-disabled-button-color;
+                                transform: rotateZ(88.2deg);
+                            }
+                        }
+                        span{
+                            color: white;
+                            background-color: $coal-color-secondary;
+                        }
+                    }
+                }
+                
+            }
+
+            & > .dot{
+                        height: 5px;
+                        width: 5px;
+                        border-radius: 100%;
+                        background-color: darken($grey-common, 20%);
+                        margin-bottom: 3px;
+                        padding: 0;
+                        @include margin(0, 65px, 0, 65px);
+            }
+        }
+
+
+
     }
 }
