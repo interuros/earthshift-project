@@ -104,6 +104,8 @@
     }
 
     .normal {
+        margin-bottom: 30px;
+
         button{
         @include left-border-radius(7px, 7px);
         @include right-border-radius(7px, 7px);

@@ -22,8 +22,7 @@ body {
   border-bottom-left-radius: 10px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
-  box-shadow: 0px 0px 40px -16px black;
-  margin-bottom: 50px; }
+  box-shadow: 0px 0px 40px -16px black; }
 
 /*---------------------------------------------------------*/
 /*----------------COLOR SCHEME-----------------*/
@@ -252,17 +251,18 @@ body {
       border-bottom: 0px solid #f9cdd4;
       border-left: 0px solid #f9cdd4; }
 
-.buttons .normal button {
-  border-top-left-radius: 7px;
-  border-bottom-left-radius: 7px;
-  border-top-right-radius: 7px;
-  border-bottom-right-radius: 7px; }
-
-.buttons .normal .buttons__examples__button--pink button {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: row; }
+.buttons .normal {
+  margin-bottom: 30px; }
+  .buttons .normal button {
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px; }
+  .buttons .normal .buttons__examples__button--pink button {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row; }
 
 .buttons .rounded button {
   border-top-left-radius: 50px;
@@ -633,6 +633,9 @@ body {
     .switchers__examples__example--blue i {
       color: rgba(0, 0, 0, 0.4); }
 
+/*---------------------------------------------------------*/
+/*----------------PROGRESS BARS-----------------*/
+/*---------------------------------------------------------*/
 .progress-bars__examples {
   height: 375px;
   width: 860px; }
@@ -642,7 +645,8 @@ body {
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: row;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    margin-bottom: 30px; }
     .progress-bars__examples__normal__example {
       width: 50%; }
       .progress-bars__examples__normal__example > progress {

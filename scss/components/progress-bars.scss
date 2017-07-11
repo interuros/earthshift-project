@@ -1,3 +1,6 @@
+/*---------------------------------------------------------*/
+/*----------------PROGRESS BARS-----------------*/
+/*---------------------------------------------------------*/
 .progress-bars{
 
     &__examples{
@@ -8,6 +11,8 @@
             list-style: none;
             @include flex-box;
             flex-wrap: wrap;
+            margin-bottom: 30px;
+
             &__example{
                 width: 50%;
 
